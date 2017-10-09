@@ -1,0 +1,24 @@
+// Make {custom grid} with child is {&-item}
+@mixin make-custom-grid($size: 1/3, $gutters: 1rem, $gutter-position: left top bottom right) {
+  @include xy-grid;
+  @include xy-gutters($gutters: $gutters, $negative: true, $gutter-position: $gutter-position);
+  &-item {
+    @include xy-cell($size: $size, $gutters: $gutters, $gutter-position: $gutter-position);
+  }
+}
+// make {aspect-ratio} thumbnail image
+@mixin make-thumbnail-cover($width: 16, $height: 9, $object-fit: 'cover') {
+  width: 100%;
+  padding-top: ($height / $width) * 100%;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: $object-fit;
+  }
+}

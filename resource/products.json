@@ -1,0 +1,352 @@
+[
+    {
+        "product_id": 979858,
+        "title": "Chạm Tới Giấc Mơ (Phiên Bản Bìa Mềm)",
+        "sku": 2512789043355,
+        "price": 61600,
+        "category_id": 1
+    },
+    {
+        "product_id": 963848,
+        "title": "Vì Sao Chúng Ta Làm Việc (Tái Bản 2017)",
+        "sku": 2423905484566,
+        "price": 39000,
+        "category_id": 1
+    },
+    {
+        "product_id": 963270,
+        "title": "Duyên Phận Ý Trời Hay Tại Lòng Người",
+        "sku": 2510334639053,
+        "price": 60200,
+        "category_id": 1
+    },
+    {
+        "product_id": 772279,
+        "title": "Thất Tình Không Sao",
+        "sku": 2510530138756,
+        "price": 57000,
+        "category_id": 1
+    },
+    {
+        "product_id": 763843,
+        "title": "Mình Là Cá, Việc Của Mình Là Bơi",
+        "sku": 2435439964247,
+        "price": 62000,
+        "category_id": 1
+    },
+    {
+        "product_id": 703922,
+        "title": "Cám Dỗ Chí Mạng",
+        "sku": 2514363323143,
+        "price": 84000,
+        "category_id": 1
+    },
+    {
+        "product_id": 656896,
+        "title": "Fujiko F. Fujio Đại Tuyển Tập - Doraemon Truyện Dài - Tập 1 (Ấn Bản Kỉ Niệm 60 Năm NXB Kim Đồng)",
+        "sku": 2533266059690,
+        "price": 123250,
+        "category_id": 1
+    },
+    {
+        "product_id": 750578,
+        "title": "Khi Hơi Thở Hóa Thinh Không",
+        "sku": 2506010458896,
+        "price": 76000,
+        "category_id": 1
+    },
+    {
+        "product_id": 757774,
+        "title": "Pháp Y Tần Minh (Trọn Bộ 3 Cuốn)",
+        "sku": 2512228482264,
+        "price": 299000,
+        "category_id": 1
+    },
+    {
+        "product_id": 744718,
+        "title": "Nếu Chỉ Còn Một Ngày Để Sống",
+        "sku": 2511155290027,
+        "price": 63000,
+        "category_id": 1
+    },
+    {
+        "product_id": 348292,
+        "title": "Harry Potter - Boxed Set: Books 1-7",
+        "sku": 2294340110347,
+        "price": 2999000,
+        "category_id": 2
+    },
+    {
+        "product_id": 904326,
+        "title": "Harry Potter And The Prisoner Of Azkaban: Illustrated Edition",
+        "sku": 2303442545480,
+        "price": 675000,
+        "category_id": 2
+    },
+    {
+        "product_id": 430275,
+        "title": "A GAME OF THRONES - 7 Volumes (Paperback)",
+        "sku": 2308389889321,
+        "price": 1229000,
+        "category_id": 2
+    },
+    {
+        "product_id": 517852,
+        "title": "The Power Of Habit",
+        "sku": 2348784033257,
+        "price": 300000,
+        "category_id": 2
+    },
+    {
+        "product_id": 520457,
+        "title": "The Complete Sherlock Holmes (2 Volumes)",
+        "sku": 2306483979177,
+        "price": 196000,
+        "category_id": 2
+    },
+    {
+        "product_id": 517233,
+        "title": "Me Before You",
+        "sku": 2304150732247,
+        "price": 139000,
+        "category_id": 2
+    },
+    {
+        "product_id": 420886,
+        "title": "The 7 Habits Of Highly Effective People: Powerful Lessons In Personal Change",
+        "sku": 2345314821865,
+        "price": 400000,
+        "category_id": 2
+    },
+    {
+        "product_id": 435231,
+        "title": "Harry Potter And The Deathly Hallows - Part 7 (Paperback)",
+        "sku": 2301820588777,
+        "price": 200000,
+        "category_id": 2
+    },
+    {
+        "product_id": 559879,
+        "title": "Start - Up Nation",
+        "sku": 2340356246768,
+        "price": 188000,
+        "category_id": 2
+    },
+    {
+        "product_id": 566990,
+        "title": "Milk And Honey",
+        "sku": 2305086867232,
+        "price": 249000,
+        "category_id": 2
+    },
+    {
+        "product_id": 989080,
+        "title": "Lịch Bàn 2018 Totoro",
+        "sku": 2219571180662,
+        "price": 45000,
+        "category_id": 3
+    },
+    {
+        "product_id": 408131,
+        "title": "Máy Tính Học Sinh Casio FX 570VN PLUS",
+        "sku": 2260467912881,
+        "price": 380000,
+        "category_id": 3
+    },
+    {
+        "product_id": 453377,
+        "title": "Bộ Chì Tô 24 Màu Nước Cao Cấp Marco Raffine 7120-24TN (Hộp Thiếc)",
+        "sku": 2256890122720,
+        "price": 155000,
+        "category_id": 3
+    },
+    {
+        "product_id": 608803,
+        "title": "Sổ Tay Nhật Ký Đọc Sách",
+        "sku": 2237703816876,
+        "price": 29000,
+        "category_id": 3
+    },
+    {
+        "product_id": 452348,
+        "title": "Bộ Chì Tô 72 Màu Cao Cấp Marco Raffine 7100-72TN (Hộp thiếc)",
+        "sku": 2250599656463,
+        "price": 440000,
+        "category_id": 3
+    },
+    {
+        "product_id": 574430,
+        "title": "Bộ Chì Tô 12 Màu Khô Cao Cấp RAFFINE 7100-12CB (Hộp Giấy)",
+        "sku": 2255291978516,
+        "price": 49000,
+        "category_id": 3
+    },
+    {
+        "product_id": 690438,
+        "title": "Bộ Bookmark Nam Châm Cô Gái Đến Từ Hôm Qua (3 Cái)",
+        "sku": 2843889812870,
+        "price": 41000,
+        "category_id": 4
+    },
+    {
+        "product_id": 417342,
+        "title": "Hộp Blueup TOEIC 600 Essential Flashcards For Toeic Trọn Bộ",
+        "sku": 2224965172932,
+        "price": 164000,
+        "category_id": 3
+    },
+    {
+        "product_id": 417356,
+        "title": "Combo Trọn Bộ Blueup IELTS 1100 Essential Flashcards For IELTS",
+        "sku": 2224132946137,
+        "price": 302000,
+        "category_id": 3
+    },
+    {
+        "product_id": 453379,
+        "title": "Bộ Chì Tô 36 Màu Nước Cao Cấp Marco Raffine 7120-36TN (Hộp Thiếc)",
+        "sku": 2256077693623,
+        "price": 232000,
+        "category_id": 3
+    },
+    {
+        "product_id": 533267,
+        "title": "Chuông Gió Đơn Gốm Sứ Bát Tràng A191",
+        "sku": 2887930343258,
+        "price": 22500,
+        "category_id": 4
+    },
+    {
+        "product_id": 533362,
+        "title": "Dây Tay Gốm Sứ Bát Tràng A184",
+        "sku": 2857324288694,
+        "price": 17100,
+        "category_id": 4
+    },
+    {
+        "product_id": 533222,
+        "title": "Vòng Tay Xương Gốm Sứ Bát Tràng A211",
+        "sku": 2859103956947,
+        "price": 17100,
+        "category_id": 4
+    },
+    {
+        "product_id": 533265,
+        "title": "Chuông Gió Lớn Gốm Sứ Bát Tràng A189",
+        "sku": 2889233962204,
+        "price": 74000,
+        "category_id": 4
+    },
+    {
+        "product_id": 533082,
+        "title": "Vòng Tay Hạt Gốm Sứ Bát Tràng A209",
+        "sku": 2851558503479,
+        "price": 17100,
+        "category_id": 4
+    },
+    {
+        "product_id": 563788,
+        "title": "Bộ Bookmark Bốn Mùa",
+        "sku": 2846731162925,
+        "price": 487500,
+        "category_id": 4
+    },
+    {
+        "product_id": 573826,
+        "title": "Bookmark Love Collection",
+        "sku": 2840142897384,
+        "price": 645000,
+        "category_id": 4
+    },
+    {
+        "product_id": 533266,
+        "title": "Chuông Gió Nhỏ Gốm Sứ Bát Tràng A190",
+        "sku": 2889876732523,
+        "price": 61200,
+        "category_id": 4
+    },
+    {
+        "product_id": 559267,
+        "title": "Chuông Gió Đơn Gốm Sứ Bát Tràng A191 - Mẫu 6",
+        "sku": 2887128769242,
+        "price": 22500,
+        "category_id": 4
+    },
+    {
+        "product_id": 550466,
+        "title": "Quả Cầu Thủy Tinh Hình Trứng Cột Cờ Việt Nam",
+        "sku": 2885958737554,
+        "price": 220000,
+        "category_id": 4
+    },
+    {
+        "product_id": 313116,
+        "title": "Làm Như Chơi",
+        "sku": 1494385595906,
+        "price": 40000,
+        "category_id": 5
+    },
+    {
+        "product_id": 259891,
+        "title": "Hiểu Về Trái Tim",
+        "sku": 1493413853858,
+        "price": 50000,
+        "category_id": 5
+    },
+    {
+        "product_id": 190757,
+        "title": "Hỏa Ngục (Tái Bản 2015)",
+        "sku": 1490582256237,
+        "price": 50000,
+        "category_id": 5
+    },
+    {
+        "product_id": 190416,
+        "title": "Tư Duy Nhanh Và Chậm",
+        "sku": 1492254795372,
+        "price": 45000,
+        "category_id": 5
+    },
+    {
+        "product_id": 191128,
+        "title": "Jeff Bezos Và Kỷ Nguyên Amazon",
+        "sku": 1497853574861,
+        "price": 50000,
+        "category_id": 5
+    },
+    {
+        "product_id": 291798,
+        "title": "Một Với Một Là Ba",
+        "sku": 1496290315617,
+        "price": 50000,
+        "category_id": 5
+    },
+    {
+        "product_id": 274786,
+        "title": "Tâm Lý Học Hài Hước",
+        "sku": 1490818607253,
+        "price": 35000,
+        "category_id": 5
+    },
+    {
+        "product_id": 194605,
+        "title": "Thương Mấy Cũng Là Người Dưng",
+        "sku": 1497031830475,
+        "price": 30000,
+        "category_id": 5
+    },
+    {
+        "product_id": 313125,
+        "title": "Đi Qua Thương Nhớ",
+        "sku": 1497752746413,
+        "price": 50000,
+        "category_id": 5
+    },
+    {
+        "product_id": 313120,
+        "title": "Cô Gái Hà Nội Mập Mặc Burqa",
+        "sku": 1493553315483,
+        "price": 50000,
+        "category_id": 5
+    }
+]

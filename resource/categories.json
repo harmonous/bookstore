@@ -1,0 +1,22 @@
+[
+    {
+        "category_id": 1,
+        "title": "Sách Tiếng Việt"
+    },
+    {
+        "category_id": 2,
+        "title": "Sách Tiếng Anh"
+    },
+    {
+        "category_id": 3,
+        "title": "Văn phòng phẩm"
+    },
+    {
+        "category_id": 4,
+        "title": "Quà Lưu Niệm"
+    },
+    {
+        "category_id": 5,
+        "title": "Ebook"
+    }
+]

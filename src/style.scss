@@ -1,0 +1,11 @@
+@import "stylesheets/bootstrap";
+
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+body {
+  font-size: 100%;
+  background: #f6f9fd;
+}

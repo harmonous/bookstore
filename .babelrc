@@ -1,0 +1,15 @@
+{
+  "env": {
+    "production": {
+      "presets": ["es2015", "react"],
+      "plugins": ["syntax-dynamic-import"]
+    },
+    "test": {
+      "presets": ["es2015", "react"]
+    },
+    "development": {
+      "presets": [["es2015", { "modules": false }], "react"],
+      "plugins": ["react-hot-loader/babel"]
+     }
+  }
+}
