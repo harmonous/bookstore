@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import logo from 'resource/img/logo.png';
 import './Header.scss';
 
@@ -8,7 +8,9 @@ export default function () {
     <header id="header" className="site-header">
       <div className="site-header--wrapper">
         <div className="site-header--logo">
-          <img src={logo} alt="Logo" />
+          <Link to="/">
+            <img src={logo} alt="Logo" />
+          </Link>
         </div>
         <div className="site-header--left">
           <nav className="menu">

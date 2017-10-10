@@ -10,10 +10,9 @@ import './App.scss';
 export default function () {
   return (
     <div id="app">
-      alo
-      {/* <Route exact path="/" component={ProductsRecent} />
-        <Route path="/category/:categoryID" component={ProductsList} />
-      <Route path="/product/:productID" component={ProductsDetail} /> */}
+      <Route exact path="/" component={ProductsRecent} />
+      <Route path="/category/:categoryID" component={ProductsList} />
+      <Route path="/product/:productID" component={ProductsDetail} />
     </div>
   );
 }

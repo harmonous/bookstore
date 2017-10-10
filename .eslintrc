@@ -6,6 +6,9 @@
   },
   "extends": "airbnb",
   "rules": {
+      "jsx-a11y/anchor-is-valid": [0],
+      "react/prefer-stateless-function": [0],
+      "react/prop-types": [0],
       "import/no-extraneous-dependencies": ["off"],
       "no-trailing-spaces": [2, { "skipBlankLines": true }],
       "react/jsx-uses-vars": [2],

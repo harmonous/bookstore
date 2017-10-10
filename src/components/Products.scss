@@ -1,0 +1,8 @@
+@import "bootstrap";
+.products {
+  @include make-custom-grid(
+  $size: 1/4,
+  $gutters: 2rem,
+  $gutter-position: left right top bottom
+  );
+}

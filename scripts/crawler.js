@@ -1,3 +1,4 @@
+/* eslint-disable */
 const cheerio = require('cheerio');
 const https = require('https');
 const superagent = require('superagent');
@@ -29,10 +30,10 @@ async function crawler() {
     const target = await superagent.get(url);
     const $ = cheerio.load(target.text);
     const itemsSelector = $('.product-listing .product-item > a');
-    let items = [];
-    let categories = [];
+    const items = [];
+    const categories = [];
 
-    for ( i = 0; i < itemsSelector.length; i += 1 ) {
+    for (let i = 0; i < itemsSelector.length; i += 1) {
       let el = itemsSelector[i];
       const itemURL = $(el).attr("href");
       const itemTarget = await superagent.get(itemURL);
@@ -54,6 +55,8 @@ async function crawler() {
         sku: +$item('#product_sku').val(),
         price: +$item('#product_price').val(),
         category_id: cat.category_id,
+        thumbnail: $item('img#product-magiczoom').attr('src'),
+        description: $item('div#gioi-thieu').html().trim(),
       });
     }
     exportJSON(items, 'products.json');

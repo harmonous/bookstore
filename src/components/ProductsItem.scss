@@ -1,0 +1,38 @@
+@import "bootstrap";
+.products-item {
+  &--object {
+    @include make-thumbnail-cover(1, 1, cover);
+  }
+  &--body {
+    padding: 10px 0;
+  }
+  &--title {
+    font-size: 80%;
+    margin: 0;
+    height: 33px;
+    text-align: center;
+    color: #121212;
+    @include limit-line(2);
+  }
+  &--float {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &--price {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    text-align: center;
+    background: $primary-color;
+    color: white;
+    font-size: 90%;
+    border-radius: 5%;
+  }
+  &:hover &--title {
+    color: $secondary-color;
+  }
+  &:hover &--price {
+    background: $secondary-color;
+  }
+}

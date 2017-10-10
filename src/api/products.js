@@ -11,26 +11,32 @@ export function getCategories() {
 
 export function getProductsRecent(posts = 12, offset = 0) {
   return new Promise((resolve) => {
+    const data = [...productsJSON];
+    const products = data.splice(offset, posts);
     setTimeout(() => {
-      resolve(productsJSON.splice(offset, posts));
+      resolve(products);
     }, 500);
   });
 }
 
-export function getProductsList(categoriesId, posts = 12, offset = 0) {
+export function getProductsList(categoryID, posts = 12, offset = 0) {
   return new Promise((resolve) => {
+    const data = [...productsJSON];
+    const products = data
+      .filter(product => (product.category_id === +categoryID))
+      .splice(offset, posts);
     setTimeout(() => {
-      resolve(productsJSON
-        .filter(product => (product.category_id === categoriesId))
-        .splice(offset, posts));
+      resolve(products);
     }, 500);
   });
 }
 
-export function getProductsDetail(productId) {
+export function getProductsDetail(productID) {
   return new Promise((resolve) => {
+    const data = [...productsJSON];
+    const product = data.filter(el => (el.product_id === +productID))[0];
     setTimeout(() => {
-      resolve(productsJSON.filter(product => product.product_id === productId));
+      resolve(product);
     }, 500);
   });
 }

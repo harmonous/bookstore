@@ -9,12 +9,12 @@ import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
 
 import 'font-awesome/scss/font-awesome.scss';
+import './style.scss';
 
 import Root from './components/Root';
 import reducer from './reducers';
 import rootSaga from './sagas';
-import { fetchProductsRecent } from './actions/products';
-import './style.scss';
+import { fetchProductsRecent, fetchCategories } from './actions/products';
 
 
 /* eslint-disable no-underscore-dangle */
@@ -26,6 +26,7 @@ const finalCreateStore = composeCreateStore();
 const store = finalCreateStore(reducer, preloadedState);
 sagaMiddleware.run(rootSaga);
 
+store.dispatch(fetchCategories());
 store.dispatch(fetchProductsRecent());
 
 

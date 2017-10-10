@@ -1,0 +1,9 @@
+@import "bootstrap";
+.page-content {
+  // padding: 30px 0;
+  &--wrapper {
+    @include xy-grid-container();
+    padding: 30px 0;
+    background: white;
+  }
+}

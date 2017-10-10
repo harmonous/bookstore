@@ -1,0 +1,42 @@
+@import "bootstrap";
+.products-single {
+  &--summary {
+    display: flex;
+  }
+  &--object {
+    width: 30%;
+  }
+  &--content {
+    width: 70%;
+    padding: 30px;
+  }
+  &--price {
+    font-size: 150%;
+    color: red;
+  }
+  &--add-to-cart {
+    margin-top: 10px;
+    display: flex;
+    .number {
+      width: 60px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+    .minus, .plus {
+      width: 30px;
+      height: 40px;
+      background: white;
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 0 30px;
+      height: 40px;
+      line-height: 40px;
+      background: $primary-color;
+      color: white;
+      margin-left: 5px;
+    }
+  }
+}
