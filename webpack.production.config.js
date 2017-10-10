@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
@@ -8,10 +8,11 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body',
 });
 
-const extractSass = new ExtractTextPlugin({
-  filename: "[name].[contenthash].css",
-});
+// const extractSass = new ExtractTextPlugin({
+//   filename: "[name].[contenthash].css",
+// });
 
+/* eslint-disable no-useless-computed-key */
 module.exports = {
   entry: [
     './src/index.js',
@@ -29,26 +30,28 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        // use: extractSass.extract('style-loader', 'css-loader!resolve-url-loader!sass-loader?sourceMap'),
-        use: extractSass.extract({
-          fallback: "style-loader",
-          use: ['css-loader', 'resolve-url-loader', 'sass-loader?sourceMap'],
-        }),
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader',
+        }, {
+          loader: 'sass-loader',
+          options: {
+            includePaths: ['src/stylesheets'],
+          },
+        }],
       },
       { test: /\.svg$/, loader: 'url-loader?limit=65000&mimetype=image/svg+xml&name=[name].[ext]' },
       { test: /\.woff$/, loader: 'url-loader?limit=65000&mimetype=application/font-woff&name=[name].[ext]' },
       { test: /\.woff2$/, loader: 'url-loader?limit=65000&mimetype=application/font-woff2&name=[name].[ext]' },
       { test: /\.[ot]tf$/, loader: 'url-loader?limit=65000&mimetype=application/octet-stream&name=[name].[ext]' },
-      { test: /\.eot$/, loader: 'url-loader?limit=65000&mimetype=application/vnd.ms-fontobject&name=[name].[ext]' }
-      // {
-      //   test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-      //   loader: 'url-loader?limit=100000'
-      // },
+      { test: /\.eot$/, loader: 'url-loader?limit=65000&mimetype=application/vnd.ms-fontobject&name=[name].[ext]' },
+      { test: /\.(png|jpg|jpeg|gif)$/, loader: 'url-loader?limit=100000' },
+      { test: /\.json$/, loader: 'json-loader' },
     ],
   },
   plugins: [
     HtmlWebpackPluginConfig,
-    extractSass,
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -57,8 +60,8 @@ module.exports = {
       path.resolve('./node_modules'),
     ],
     alias: {
-      ['~']: path.resolve(__dirname + '/src'),
-      // reducers: path.resolve(__dirname + '/reducers'),
+      ['~']: path.join(__dirname, '/src'),
+      resource: path.join(__dirname, '/resource'),
     },
   },
 };
