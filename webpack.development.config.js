@@ -7,6 +7,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body',
 });
 
+/* eslint-disable no-useless-computed-key */
 module.exports = {
   devtool: 'source-map',
   entry: [
@@ -26,19 +27,24 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader?sourceMap=true',
-          'sass-loader?sourceMap=true'
-        ],
+        use: [{
+          loader: 'style-loader',
+        }, {
+          loader: 'css-loader',
+        }, {
+          loader: 'sass-loader',
+          options: {
+            includePaths: ['src/stylesheets'],
+          },
+        }],
       },
       { test: /\.svg$/, loader: 'url-loader?limit=65000&mimetype=image/svg+xml&name=[name].[ext]' },
       { test: /\.woff$/, loader: 'url-loader?limit=65000&mimetype=application/font-woff&name=[name].[ext]' },
       { test: /\.woff2$/, loader: 'url-loader?limit=65000&mimetype=application/font-woff2&name=[name].[ext]' },
       { test: /\.[ot]tf$/, loader: 'url-loader?limit=65000&mimetype=application/octet-stream&name=[name].[ext]' },
       { test: /\.eot$/, loader: 'url-loader?limit=65000&mimetype=application/vnd.ms-fontobject&name=[name].[ext]' },
-      { test: /\.(png|jpg|jpeg|gif)$/, loader: "url-loader?limit=100000" },
-      { test: /\.json$/, loader: "json-loader" },
+      { test: /\.(png|jpg|jpeg|gif)$/, loader: 'url-loader?limit=100000' },
+      { test: /\.json$/, loader: 'json-loader' },
     ],
   },
   plugins: [
@@ -51,8 +57,8 @@ module.exports = {
       path.resolve('./node_modules'),
     ],
     alias: {
-      ['~']: path.resolve(__dirname + '/src'),
-      resource: path.resolve(__dirname + '/resource'),
+      ['~']: path.join(__dirname, '/src'),
+      resource: path.join(__dirname, '/resource'),
     },
   },
 };

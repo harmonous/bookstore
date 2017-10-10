@@ -1,13 +1,9 @@
 import React from 'react';
-
-import './Header.scss';
+import { NavLink } from 'react-router-dom';
 import logo from 'resource/img/logo.png';
+import './Header.scss';
 
 export default function () {
-  const MenuDropdown = () => {
-    
-  };
-
   return (
     <header id="header" className="site-header">
       <div className="site-header--wrapper">
@@ -17,14 +13,10 @@ export default function () {
         <div className="site-header--left">
           <nav className="menu">
             <ul>
-              <li><a>Homepage</a></li>
-              <li><a>Products</a></li>
-              <li><a>Github</a></li>
+              <li><NavLink exact to="/">Homepage</NavLink></li>
+              <li><a href="https://github.com/harmonous/bookstore/">Github</a></li>
             </ul>
           </nav>
-        </div>
-        <div className="site-header--right">
-          <MenuDropdown />
         </div>
       </div>
     </header>

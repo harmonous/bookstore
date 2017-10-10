@@ -8,26 +8,25 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
 
+import 'font-awesome/scss/font-awesome.scss';
+
 import Root from './components/Root';
 import reducer from './reducers';
 import rootSaga from './sagas';
-import { fetchProducts } from './actions/products';
-
-import 'font-awesome/scss/font-awesome.scss';
+import { fetchProductsRecent } from './actions/products';
 import './style.scss';
+
 
 /* eslint-disable no-underscore-dangle */
 const preloadedState = {};
 const sagaMiddleware = createSagaMiddleware();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const composeCreateStore = () => composeEnhancers(
-  applyMiddleware(sagaMiddleware),
-)(createStore);
+const composeCreateStore = () => composeEnhancers(applyMiddleware(sagaMiddleware))(createStore);
 const finalCreateStore = composeCreateStore();
 const store = finalCreateStore(reducer, preloadedState);
 sagaMiddleware.run(rootSaga);
 
-store.dispatch(fetchProducts());
+store.dispatch(fetchProductsRecent());
 
 
 const render = (Component) => {

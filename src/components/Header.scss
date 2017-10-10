@@ -1,3 +1,4 @@
+@import "bootstrap";
 .site-header {
   background: white;
   &--wrapper {
@@ -6,6 +7,9 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    @include breakpoint(medium down) {
+      padding: 0 30px;
+    }
   }
   &--logo {
     width: 200px;
@@ -17,14 +21,16 @@
   &--right {
 
   }
-  .menu {
-    ul {
+  &--left > .menu, &--right > .menu {
+    > ul {
       display: flex;
       margin: 0;
       list-style: none;
-      li {
-        a {
-          font-size: 120%;
+      > li {
+        margin: 0 1rem;
+        > a {
+          font-size: 95%;
+          color: #121212;
         }
       }
     }

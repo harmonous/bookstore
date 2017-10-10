@@ -1,5 +1,4 @@
-import { put, call, takeEvery, all, fork } from 'redux-saga/effects';
-import { delay } from 'redux-saga';
+import { all, fork } from 'redux-saga/effects';
 
 import productsSagas from './products';
 
